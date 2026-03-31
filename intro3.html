@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Imaaaa 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body.intro1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #ffd2f8, #ffebf5);
+  overflow: hidden;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  max-width: 90%;
+  animation: fadeIn 1s ease;
+}
+
+/* Title with animation */
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff69b4;
+  margin-bottom: 25px;
+  animation: popUp 0.6s ease;
+}
+
+/* Single story box */
+.story-box {
+  background: #fff0f8;
+  padding: 20px 25px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(255,105,180,0.2);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #444;
+  animation: popUp 0.8s ease;
+}
+
+/* Highlight important text */
+.story-box span.highlight {
+  color: #ff69b4;
+  font-weight: 600;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ed3caf;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255,111,97,0.4);
+}
+
+.btn:hover {
+  background: #ff00a6;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255,111,97,0.6);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popUp {
+  0% { transform: scale(0.7); opacity: 0; }
+  70% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+</style>
+</head>
+<body class="intro1">
+<div class="container">
+  <h1 class="title">Aku janji!! 🥹🩷</h1>
+  
+  <div class="story-box">
+    Aku janji ga akan bikin kamu sedih, ga akan bikin kamu kecewa, ga akan bikin kamu susah 
+    dan akan selalu berusaha supaya <span class="highlight">kamu bahagia 💖</span>
+  </div>
+
+  <a href="page1.html" class="btn">Lanjut 👉</a>
+</div>
+</body>
+</html>

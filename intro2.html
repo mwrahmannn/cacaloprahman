@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesan Kecil 2 💌</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body.intro1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffd2f8, #ffebf5);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 90%;
+  text-align: center;
+  padding: 30px 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Title box */
+.title-box {
+  background: hsl(324, 100%, 98%);
+  padding: 15px 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(255, 97, 150, 0.25);
+  animation: popUp 0.6s ease;
+}
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff69b4;
+  margin: 0;
+}
+
+/* Story cards */
+.story-card {
+  background: #fff0f8;
+  padding: 18px 20px;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #444;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: popCard 0.6s forwards;
+}
+
+.card1 { animation-delay: 0.3s; }
+.card2 { animation-delay: 0.8s; }
+.card3 { animation-delay: 1.3s; }
+.card4 { animation-delay: 1.8s; }
+
+.story-card span.highlight {
+  color: #ff69b4;
+  font-weight: 600;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ed3caf;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(97, 150, 255, 0.4);
+}
+.btn:hover {
+  background: #ff00a6;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(254, 101, 234, 0.6);
+}
+
+/* Animations */
+@keyframes popUp {
+  0% { transform: scale(0.7); opacity: 0; }
+  70% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+@keyframes popCard {
+  0% { opacity: 0; transform: scale(0.8) translateY(20px); }
+  70% { opacity: 1; transform: scale(1.1) translateY(0); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+</style>
+</head>
+<body class="intro1">
+<div class="container">
+  <div class="title-box">
+    <h1 class="title">I need u 🩷</h1>
+  </div>
+
+  <div class="story-card card1">
+    Tapi bukan itu aja, aku sadar kalau aku nggak cuma ingin ada di kedidupan kamu, aku butuh <span class="highlight">kamu</span> untuk temenin aku.
+  </div>
+  <div class="story-card card2">
+    Aku juga butuh kamu di hidup aku. Aku butuh <span class="highlight">senyum kamu</span>, obrolan kamu, dan tingkah kamu yang lucu.
+  </div>
+  <div class="story-card card3">
+    <span class="highlight">Aku butuh kamu</span> jadi alasan aku lebih semangat lagi, jadi tempat aku pulang kalau lagi capek, dan jadi orang yang selalu bisa bikin aku tenang.
+  </div>
+    <div class="story-card card4">
+    Aku pengen penuhin memori kamera aku dengan ribuan <span class="highlight"> foto foto kamu.</span>
+  </div>
+
+  <a href="intro3.html" class="btn">Lanjut 👉</a>
+</div>
+</body>
+</html>

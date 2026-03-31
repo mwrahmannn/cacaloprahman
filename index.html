@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat Imaaa 🌸</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body.intro {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      background: linear-gradient(135deg, #ffdde1, #ee9cdf);
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      animation: fadeIn 1.2s ease;
+      max-width: 90%;
+    }
+
+    .title {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #e91e63;
+      margin-bottom: 15px;
+      animation: popIn 1s ease;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 25px;
+      animation: fadeIn 2s ease;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #e91e63;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: 0.3s ease;
+      box-shadow: 0 5px 15px rgba(233,30,99,0.4);
+      animation: bounce 2s infinite;
+    }
+
+    .btn:hover {
+      background: #c2185b;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(233,30,99,0.6);
+    }
+
+    /* Animasi */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.7); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+  </style>
+</head>
+<body class="intro">
+  <div class="container">
+    <h1 class="title">Haiii Imaa 🙋‍♂️✨</h1>
+    <p class="subtitle">Ini adalah surprise kecil dari Rahman untuk Imaa.. 😋</p>
+    <a href="intro1.html" class="btn">Mulai 👉</a>
+  </div>
+</body>
+</html>

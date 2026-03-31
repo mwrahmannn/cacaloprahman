@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeay, Officially 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body.page2 {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+      background: linear-gradient(135deg, #fff, #ffe4ec);
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 16px;
+      margin: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      animation: fadeIn 1s ease;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #e91e63;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 10px;
+    }
+     .text {
+      font-size: 0.8rem;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .date-box {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 3px solid #e91e63;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #e91e63;
+      animation: glowing 2s infinite;
+    }
+
+    .message-box {
+      background: #fff0f6;
+      border: 2px dashed #e91e63;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 12px;
+      font-size: 1rem;
+      color: #c2185b;
+      font-weight: 500;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glowing {
+      0% { box-shadow: 0 0 5px #e91e63; }
+      50% { box-shadow: 0 0 20px #e91e63; }
+      100% { box-shadow: 0 0 5px #e91e63; }
+    }
+  </style>
+</head>
+<body class="page2">
+  <div class="container">
+    <h1 class="title">Yeay! Officially Jadian 💕</h1>
+    <!-- <p class="subtitle">Tanggal spesial kita:</p> -->
+    <div class="date-box" id="dateBox"></div>
+    <p class="text">Akhirnya Rahman & Risma jadian guys, ditunggu Day-1 jadi couple tiktoknya..</p>
+  </div>
+
+  <!-- container tambahan -->
+  <div class="container message-box">
+    Let’s fill each day with sweet memories, laughter, and endless love 😍 🩷
+    <br> 
+  </div>
+
+  <script>
+    // Ambil tanggal hari ini saat tombol "Iya" diklik
+    const today = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById("dateBox").innerText = today.toLocaleDateString('id-ID', options);
+  </script>
+</body>
+</html>
